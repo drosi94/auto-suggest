@@ -1,0 +1,7 @@
+.results-container {
+  box-shadow: 1px 0px 5px 0px rgba(170, 170, 170, 0.75),
+    -1px 0px 5px 0px rgba(170, 170, 170, 0.75);
+  border: 0.1rem solid #eee;
+  overflow: auto;
+  width: clamp(18rem, 60vw, 60rem);
+}

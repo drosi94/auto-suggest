@@ -1,5 +1,5 @@
 {
-  "name": "auto-sugget",
+  "name": "auto-suggest",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,12 +8,16 @@
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "react-redux": "^7.2.1",
+    "react-scripts": "3.4.3",
+    "redux": "^4.0.5",
+    "redux-debounced": "^0.5.0",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -30,5 +34,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "puppeteer": "^5.3.0",
+    "react-test-renderer": "^16.13.1",
+    "redux-mock-store": "^1.5.4"
   }
 }

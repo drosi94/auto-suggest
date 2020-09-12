@@ -1,0 +1,21 @@
+.result-item-container {
+  padding: 2rem;
+  cursor: pointer;
+}
+
+.result-item-container:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.result-item-container h2 {
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+}
+
+.result-item-container h2 .keyword {
+  color: #ff9933;
+}
+
+.result-item-container .extra-info {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: clamp(1.2rem, 2vw, 1.4rem);
+}

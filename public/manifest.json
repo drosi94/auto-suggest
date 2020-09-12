@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Auto-Suggest news",
+  "name": "Auto-Suggest news",
   "icons": [
     {
       "src": "favicon.ico",

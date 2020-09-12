@@ -1,0 +1,32 @@
+.autosuggest-form {
+  display: flex;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-wrapper {
+  display: flex;
+  flex: 1;
+  margin: 3rem 0 0.1rem 1rem;
+}
+
+.input-wrapper input {
+  margin: 1rem 0 0 0;
+  width: clamp(18rem, 60vw, 60rem);
+  font-size: 1.6rem;
+  height: 4.5rem;
+  border-color: rgb(199, 199, 199);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.input-wrapper input:focus {
+  outline-color: var(--primary-color);
+}
+
+.results-container {
+  /* position: absolute; */
+}
