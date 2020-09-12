@@ -4,7 +4,7 @@ const timeout = 20000;
 let browser;
 let page;
 
-describe('Test title and header of the homepage', () => {
+describe('E2E test of the app', () => {
   beforeAll(async () => {
     browser = await puppeteer.launch({
       headless: false,
