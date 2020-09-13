@@ -1,16 +1,18 @@
-.autosuggest-form {
+.autosuggest-form-container {
   display: flex;
+  align-items: flex-end;
 }
 
 .input-wrapper {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
 }
 
 .button-wrapper {
-  display: flex;
+  display: inline-flex;
   flex: 1;
-  margin: 3rem 0 0.1rem 1rem;
+  align-items: flex-end;
+  margin-left: 1rem;
 }
 
 .input-wrapper input {
@@ -18,15 +20,11 @@
   width: clamp(18rem, 60vw, 60rem);
   font-size: 1.6rem;
   height: 4.5rem;
-  border-color: rgb(199, 199, 199);
-  border-radius: 0.5rem;
+  border: 1px solid rgb(199, 199, 199);
+  border-radius: 0.25rem;
   padding: 1rem;
 }
 
 .input-wrapper input:focus {
   outline-color: var(--primary-color);
-}
-
-.results-container {
-  /* position: absolute; */
 }

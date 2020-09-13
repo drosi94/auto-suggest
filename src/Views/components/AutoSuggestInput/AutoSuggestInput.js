@@ -17,7 +17,7 @@ const AutoSuggestInput = (props) => {
 
   const _search = (value) => {
     setValue(value);
-    if (value) {
+    if (value && value.length >= 3) {
       dispatch(search(value));
     } else {
       dispatch(clearSearch());
@@ -25,8 +25,8 @@ const AutoSuggestInput = (props) => {
   };
 
   return (
-    <>
-      <div data-testid="autoSuggestDivContainer" className="autosuggest-form">
+    <div data-testid="autoSuggestDivContainer">
+      <div className="autosuggest-form-container">
         <div className="input-wrapper">
           <label htmlFor="search">Search</label>
           <input
@@ -36,21 +36,22 @@ const AutoSuggestInput = (props) => {
             value={value}
             onChange={(e) => _search(e.target.value)}
           />
-          <Results
-            query={value}
-            isSearchLoading={isSearchLoading}
-            results={results}
-          />
         </div>
         <div className="button-wrapper">
           <CustomButton
             type="submit"
             text="Search"
+            disabled={!value || value.length < 3}
             onClick={() => _search(value)}
           />
         </div>
       </div>
-    </>
+      <Results
+        query={value}
+        isSearchLoading={isSearchLoading}
+        results={results}
+      />
+    </div>
   );
 };
 
